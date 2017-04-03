@@ -1,0 +1,10 @@
+.reservations-wrap{
+   display: inline-block;
+   width:100%;
+   .reservation-item{
+      padding:15px;
+      background: #fff;
+      border:1px solid #333;
+      display: inline-block;
+   }
+}

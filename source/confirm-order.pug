@@ -1,0 +1,168 @@
+include modules/head/head
+doctype html
+html
+  +head
+  body
+   .header
+      .container.header-inner
+         .logo
+            img(src='http://placehold.it/150x50')
+         .control
+            .group-dropdown
+               .dropdown
+                  #dropdownMenu3.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
+                    img(src='http://placehold.it/50x36')
+                    | Michel Reseverl
+                  ul.dropdown-menu(aria-labelledby='dropdownMenu3')
+                     li
+                        a(href='account.html') Account
+                     li
+                        a(href='reservation.html') Reservation
+                     li
+                        a(href='#') Sign Out
+               .dropdown
+                  button#dropdownMenu1.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
+                     | English
+                     span.caret
+                  ul.dropdown-menu(aria-labelledby='dropdownMenu1')
+                     li
+                        a(href='#') Action
+                     li
+                        a(href='#') Another action
+               .dropdown
+                  button#dropdownMenu2.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
+                     i.fa.fa-jpy(aria-hidden='true')
+                     span.caret
+                  ul.dropdown-menu(aria-labelledby='dropdownMenu2')
+                     li
+                        a(href='#') Dola
+                     li
+                        a(href='#') Another action
+   .content
+      .container-fluid.bg-grey
+        .container
+          .col-md-9.col-sm-12
+            .main-content
+              .card.mgb-md-30
+                .alert.alert-success(role='alert')
+                  h1
+                    strong Thank you! Booking completed.
+                    p Confirm email has been sent to 
+                    a(href="#") kaku@triple.jp
+              .card.mgb-md-30
+                h2 Private Chartered Paln/ Standard Course: 10-Hour Sightseeing from Tokyo. Pick-and -eat Fresh Cherry! The 5th Sation of Mt.Fuji, the World Heritage Site! Mt.Kachi Kachi Ropeway!
+                p.status Status:
+                  span.success Booked
+                .alert.alert-warning(role='alert')
+                  strong Warning!
+                  |  Cancellation fees will be chanrged after Mar 20,2017
+                p Reservation #:2323
+                p Tour code: K12842
+                p Rooms: 1 Room (shared by 3)
+                p Participant Information
+                .table-responsive
+                  table.table
+                    tr
+                      th Name
+                      th Age
+                      th Gender
+                      th Country
+                    tr
+                      td Kazuhisa Takahashi
+                      td 40
+                      td Male
+                      td Japan
+                    tr
+                      td Yokoso Hanako 
+                      td 37
+                      td Female
+                      td Japan
+                    tr
+                      td Yokoso Taro
+                      td 6
+                      td Male
+                      td Japan
+                p Tour Conductor: English
+                hr
+                dl.dl-horizontal
+                  dt.text-left Adult: 
+                    i.fa.fa-jpy(aria-hidden='true')
+                    | 40,000x2
+                  dd 
+                    i.fa.fa-jpy(aria-hidden='true')
+                    | 80,000
+                  dt.text-left
+                    | Children: 
+                    i.fa.fa-jpy(aria-hidden='true')
+                    | 20,000x1
+                  dd
+                    i.fa.fa-jpy(aria-hidden='true')
+                    | 20,000
+                  dt.text-left
+                    | Infants: 
+                    i.fa.fa-jpy(aria-hidden='true')
+                    | 0x1
+                  dd
+                    i.fa.fa-jpy(aria-hidden='true')
+                    | 0
+                  dt.text-left
+                    strong Sub Total: 
+                  dd
+                    i.fa.fa-jpy(aria-hidden='true')
+                    | 100,000
+                  dt.text-left
+                    strong Discount 5%: 
+                  dd
+                    | -
+                    i.fa.fa-jpy(aria-hidden='true')
+                    | 5,000
+                  dt.text-left
+                    strong Tax 8%: 
+                  dd 
+                    i.fa.fa-jpy(aria-hidden='true')
+                    | 7,600
+                  dt.text-left
+                    strong TOTAL
+                  dd
+                    i.fa.fa-jpy(aria-hidden='true')
+                    | 102,600
+                hr
+                p Date: Mon, Mar 27
+                p Meeting Time: 7:20 AM
+                p Additional Information
+                span Jiro is allergic to milk. Please do not add any milk products to his food.
+                p Emergency Contact: 090-1111-1111
+                p Hotel: Washington Hotel Shinjuku
+          .col-md-3.col-sm-12
+            .card.mgb-md-30
+              button.btn.btn-primary.btn-lg.btn-block(type='button') Print This Page
+            .card.mgb-md-30
+              h4.text-center Update information
+              ul
+                li
+                  a(href="#") Change date
+                li
+                  a(href="#") Update Participants Info
+                li
+                  a(href="#") Change support guide
+                li
+                  a(href="#") Cancel
+                li
+                  a(href="#") View Cancel Policy
+            .card.mgb-md-30
+              button.btn.btn-primary.btn-lg.btn-block(type='button') Send Invoice   
+   footer.footer
+      .container.sm
+         dl.dl-horizontal
+          dt About Us
+          dd
+            | dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          dt Service center 
+          dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+   .copyright.text-center
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

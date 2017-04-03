@@ -1,0 +1,147 @@
+.popup-suggest-search{
+   height: 0;
+   overflow: hidden;
+   position: absolute;
+   top:100%;
+   left:0;
+   margin-left: 15px;
+   padding:15px;
+   opacity: 0;
+   background: #fff;
+   border:1px solid #000;
+   top:40px;
+}
+.input-search-suggest:focus + .popup-suggest-search{
+   transition:opacity .2s;
+   opacity: 1;
+   z-index: 99;
+   height: auto;
+}
+.form-yokoso{
+   display: inline-block;
+   width:100%;
+}
+
+.js-dropdown-modify-room{
+   width:100%;
+   padding:15px;
+}
+
+.participants-form-outer{
+   .participants-form-inner{
+      label{
+         display: none;
+      }
+   }
+   .participants-form-inner:nth-of-type(1){
+      label{
+         display: block;
+      }
+   }
+   @include respond-to('small-tablet') {
+      .participants-form-inner:nth-of-type(1){
+         label{
+            display: none;
+         }
+      }
+   }
+}
+.participants-form-inner{
+   margin-bottom: 15px;
+   display: inline-block;
+   width:100%;
+   .lg{
+      width:23%;
+      float:left;
+      padding-right:1%;
+   }
+   .md{
+      width:20%;
+      float:left;
+   }
+   .sm{
+      width:17%;
+      float:left;
+      padding-right: 1%;
+   }
+   @include respond-to('small-tablet') {
+      .lg,.md,.sm{
+         width:50%;
+         margin-bottom: 10px;
+      }
+      .md,.sm{
+         width:33%;
+         margin-bottom: 10px;
+      }
+   }
+   @include respond-to('medium-mobile') {
+      .lg,.md,.sm{
+         width:100%;
+      }
+   }
+   &.modify{
+      padding-right: 44px;
+      position: relative;
+      .xs{
+         position: absolute;
+         right:0;
+         top:0;
+      }
+      @include respond-to('medium-mobile') {
+         .xs{
+            position: static;
+            width:100%;
+            button{
+               width:100%;
+            }
+         }
+      }
+      &:first-child{
+         .xs{
+            top:25px;
+         }
+      }
+   }
+}
+
+.form-credit-card-sigup{
+   display: inline-block;
+   width: 100%;
+   label{
+      display: block;
+   }
+   select{
+      width: 60px;
+      display: inline-block;
+      margin-right: 15px;
+      padding-left: 5px;
+   }
+   select.form-control:nth-of-type(2){
+      margin-left: 15px;
+   }
+   span{
+      font-size: 20px;
+      display: inline-block;
+      vertical-align: middle;
+   }
+   .lg{
+      max-width: 310px;
+      width:100%;
+      float:left;
+      clear:both;
+   }
+   .md{
+      width:185px;
+      clear:both;
+      float:left;
+   }
+   .sm{
+      float:left;
+      width: 64px;
+   }
+}
+
+/* Form sing up / sign in */
+.modal-footer.text-center{
+   text-align: center;
+}

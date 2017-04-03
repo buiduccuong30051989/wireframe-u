@@ -1,0 +1,255 @@
+include modules/head/head
+doctype html
+html
+  +head
+  body
+   .header
+      .container.header-inner
+         .logo
+            img(src='http://placehold.it/150x50')
+         .control
+            .group-dropdown
+               .dropdown
+                  #dropdownMenu3.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
+                    img(src='http://placehold.it/50x36')
+                    | Michel Reseverl
+                  ul.dropdown-menu(aria-labelledby='dropdownMenu3')
+                     li
+                        a(href='account.html') Account
+                     li
+                        a(href='reservation.html') Reservation
+                     li
+                        a(href='#') Sign Out
+               .dropdown
+                  button#dropdownMenu1.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
+                     | English
+                     span.caret
+                  ul.dropdown-menu(aria-labelledby='dropdownMenu1')
+                     li
+                        a(href='#') Action
+                     li
+                        a(href='#') Another action
+               .dropdown
+                  button#dropdownMenu2.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
+                     i.fa.fa-jpy(aria-hidden='true')
+                     span.caret
+                  ul.dropdown-menu(aria-labelledby='dropdownMenu2')
+                     li
+                        a(href='#') Dola
+                     li
+                        a(href='#') Another action
+      .container
+       .step-book
+          .step.current 1.Enter personal detail info
+          .step 2.Order Complete
+   .content
+      .container-fluid.bg-grey
+        .container
+          .col-md-9.col-sm-12
+            .main-content
+              .card.mgb-md-30
+                h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                p Date: Mon, Mar 26
+                p Room: 1 Room (shared by 3)
+                p Participants: 2 Adults, 1 Child, 1 Infant
+                p Tour Conductor: English
+              .card.mgb-md-30
+                h3 Your information
+                form.form-yokoso
+                  .col-sm-4
+                    .form-group
+                      label(for='firstName') First Name
+                      input#exampleInputEmail1.form-control(type='text', placeholder='Your First Name')
+                  .col-sm-4
+                    .form-group
+                      label(for='lastName') Last Name
+                      input#lastName.form-control(type='text', placeholder='Your Last Name')
+                  .col-sm-4
+                    .form-group
+                      label(for='emailAddress') Your Email
+                      input#emailAddress.form-control(type='email', placeholder='Your Email')
+                  .col-sm-12
+                    .form-group
+                      label(for='emergencyContact') Emergency Contact
+                      input.form-control(type='text', placeholder='Your Number')
+                  .col-sm-12
+                    .form-group
+                      label(for='emergencyContact') Emergency Contact
+                      input.form-control(type='text', placeholder='Your Number Hotel')
+              .card.mgb-md-30
+                h3 Participants information
+                form.participants-form-outer
+                  .participants-form-inner
+                    .lg
+                      label First Name
+                      input.form-control(type='text', placeholder='Your First Name')
+                    .lg
+                      label Last Name
+                      input.form-control(type='text', placeholder='Your Last Name')
+                    .sm
+                      label(for='lastName') Gender
+                      select.form-control
+                        option(value='', disabled='', selected='') Gender
+                        option Male
+                        option Famale
+                    .sm
+                      label.nowarp(for='lastName') Date of Birth
+                      input.js-dateOfBirth.form-control(type='text', placeholder='Your Birth Day')
+                    .md
+                      label.nowarp(for='lastName') Conuntry of Residence
+                      select.form-control
+                        option(value='', disabled='', selected='') Country
+                        option English
+                        option Japan
+                  .participants-form-inner
+                    .lg
+                      label First Name
+                      input.form-control(type='text', placeholder='Your First Name')
+                    .lg
+                      label Last Name
+                      input.form-control(type='text', placeholder='Your Last Name')
+                    .sm
+                      label(for='lastName') Gender
+                      select.form-control
+                        option(value='', disabled='', selected='') Gender
+                        option Male
+                        option Famale
+                    .sm
+                      label.nowarp(for='lastName') Date of Birth
+                      input.js-dateOfBirth.form-control(type='text', placeholder='Your Birth Day')
+                    .md
+                      label.nowarp(for='lastName') Conuntry of Residence
+                      select.form-control
+                        option(value='', disabled='', selected='') Country
+                        option English
+                        option Japan
+                  .participants-form-inner
+                    .lg
+                      label First Name
+                      input.form-control(type='text', placeholder='Your First Name')
+                    .lg
+                      label Last Name
+                      input.form-control(type='text', placeholder='Your Last Name')
+                    .sm
+                      label(for='lastName') Gender
+                      select.form-control
+                        option(value='', disabled='', selected='') Gender
+                        option Male
+                        option Famale
+                    .sm
+                      label.nowarp(for='lastName') Date of Birth
+                      input.js-dateOfBirth.form-control(type='text', placeholder='Your Birth Day')
+                    .md
+                      label.nowarp(for='lastName') Conuntry of Residence
+                      select.form-control
+                        option(value='', disabled='', selected='') Country
+                        option English
+                        option Japan
+              .card.mgb-md-30
+                h3 Credit Card Information
+                .form-credit-card-sigup
+                  .lg.mgb-md-30
+                    label Card Number
+                    input.form-control(type='text', placeholder='Your Card Number')
+                  .md
+                    label Valid Thru
+                    select.form-control
+                      option(value='', disabled='', selected='') MM
+                      option 1
+                      option 2
+                      option 3
+                    span /
+                    select.form-control
+                      option(value='', disab
+
+                      led='', selected='') DD
+                      option 1
+                      option 2
+                      option 3
+                  .sm
+                    label CVC
+                    input.form-control(type='text', placeholder='CVC')
+              .card.mgb-md-30
+                h3 Additional Information
+                label If you have any special request (food allergy etc.), please inform us the details. We will contact ou by the e-mail later on
+                textarea.form-control(rows='3', placeholder='Textarea')
+          .col-md-3.col-sm-12
+            .card.mgb-md-30
+              .box-booking-confirm-price
+                .table-responsive
+                  table.table
+                    tr
+                      td 
+                        | Adult: 
+                        i.fa.fa-jpy(aria-hidden='true')
+                        | 40,000x2
+                      td.text-right 
+                        i.fa.fa-jpy(aria-hidden='true')
+                        | 80,000
+                    tr
+                      td 
+                        | Children: 
+                        i.fa.fa-jpy(aria-hidden='true')
+                        | 20,000x1
+                      td.text-right 
+                        i.fa.fa-jpy(aria-hidden='true')
+                        | 20,000
+                    tr
+                      td 
+                        | Infants: 
+                        i.fa.fa-jpy(aria-hidden='true')
+                        | 0x1
+                      td.text-right 
+                        i.fa.fa-jpy(aria-hidden='true')
+                        | 0
+                    tr
+                      td 
+                        strong Sub Total: 
+                      td.text-right 
+                        i.fa.fa-jpy(aria-hidden='true')
+                        | 100,000
+                    tr
+                      td 
+                        strong Discount 5%: 
+                      td.text-right 
+                        | -
+                        i.fa.fa-jpy(aria-hidden='true')
+                        | 5,000
+                    tr
+                      td 
+                        strong Tax 8%: 
+                      td.text-right 
+                        i.fa.fa-jpy(aria-hidden='true')
+                        | 7,600
+                    tr
+                      td.text-center(colspan='2')
+                        strong 
+                          i.fa.fa-jpy(aria-hidden='true')
+                          | 102,600
+                        p (approx: USD 1,026)
+            .card.mgb-md-30
+              .box-booking-confirm-coupon
+                form
+                  input.form-control.text-center(type='text', placeholder='Coupon', value='X180B') 
+                  button.btn.btn-primary.btn-block(type='button') Add Coupon Code
+            .card
+              p By Booking a tour, i agree with 
+                a(href="#") terms
+                | and 
+                a(href="#") privacy policy
+              a.btn.btn-primary.btn-lg.btn-block(href='confirm-order.html') Book a tour 
+   footer.footer
+      .container.sm
+         dl.dl-horizontal
+          dt About Us
+          dd
+            | dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          dt Service center 
+          dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+   .copyright.text-center
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

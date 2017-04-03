@@ -1,0 +1,15 @@
+.header{
+   .header-inner{
+      .logo{
+         float:left;
+      }
+      .control{
+         .group-btn,.group-dropdown{
+            float:right;
+            .dropdown{
+               float:right;
+            }
+         }
+      }
+   }
+}

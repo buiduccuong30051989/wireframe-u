@@ -1,0 +1,88 @@
+include modules/head/head
+doctype html
+html
+  +head
+  body
+   .header
+      .container.header-inner
+         .logo
+            img(src='http://placehold.it/150x50')
+         .control
+            .group-dropdown
+               .dropdown
+                  #dropdownMenu3.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
+                    img(src='http://placehold.it/50x36')
+                    | Michel Reseverl
+                  ul.dropdown-menu(aria-labelledby='dropdownMenu3')
+                     li
+                        a(href='account.html') Account
+                     li
+                        a(href='rever.html') Reservation
+                     li
+                        a(href='#') Sign Out
+               .dropdown
+                  button#dropdownMenu1.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
+                     | English
+                     span.caret
+                  ul.dropdown-menu(aria-labelledby='dropdownMenu1')
+                     li
+                        a(href='#') Action
+                     li
+                        a(href='#') Another action
+               .dropdown
+                  button#dropdownMenu2.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
+                     i.fa.fa-jpy(aria-hidden='true')
+                     span.caret
+                  ul.dropdown-menu(aria-labelledby='dropdownMenu2')
+                     li
+                        a(href='#') Dola
+                     li
+                        a(href='#') Another action
+   .content
+      .container-fluid.bg-grey
+        .container
+          .row
+            .col-sm-12
+              h2 Reservations
+            .reservations-wrap
+              a.reservation-item(href="reservation-detail.html")
+                .col-md-4
+                  img(src='http://placehold.it/300x300/0f9')
+                .col-md-8
+                  h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                  hr
+                  P Reservation #:34567
+                  p Date: Mon, Mar 27
+                  p.status Status:
+                    span.success Booked
+                  p TOTAL: 
+                    i.fa.fa-jpy(aria-hidden='true')
+                    | 108,000
+              a.reservation-item(href="reservation-detail.html")
+                .col-md-4
+                  img(src='http://placehold.it/300x300/0f9')
+                .col-md-8
+                  h3 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                  hr
+                  P Reservation #:34567
+                  p Date: Mon, Mar 27
+                  p.status Status:
+                    span.success Booked
+                  p TOTAL: 
+                    i.fa.fa-jpy(aria-hidden='true')
+                    | 108,000
+   footer.footer
+      .container.sm
+         dl.dl-horizontal
+          dt About Us
+          dd
+            | dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          dt Service center 
+          dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+   .copyright.text-center
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

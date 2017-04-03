@@ -1,0 +1,40 @@
+.relative{
+   position:relative;
+}
+.container{
+   .sm{
+      max-width: 960px;
+   }
+}
+
+/*=============================
+=            Space            =
+=============================*/
+   .mgb-md-30{
+      margin-bottom: 30px;
+   }
+
+
+/*=====  End of Space  ======*/
+
+/*==================================
+=            Background            =
+==================================*/
+   .bg-grey{
+      background: #ccc;
+   }
+
+
+/*=====  End of Background  ======*/
+
+/*============================
+=            Typo            =
+============================*/
+   .nowarp{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+   }
+
+
+/*=====  End of Typo  ======*/

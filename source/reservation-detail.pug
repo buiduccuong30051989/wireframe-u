@@ -1,0 +1,471 @@
+include modules/head/head
+doctype html
+html
+  +head
+  body
+   .header
+      .container.header-inner
+         .logo
+            img(src='http://placehold.it/150x50')
+         .control
+            .group-dropdown
+               .dropdown
+                  #dropdownMenu3.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
+                    img(src='http://placehold.it/50x36')
+                    | Michel Reseverl
+                  ul.dropdown-menu(aria-labelledby='dropdownMenu3')
+                     li
+                        a(href='account.html') Account
+                     li
+                        a(href='reservation.html') Reservation
+                     li
+                        a(href='#') Sign Out
+               .dropdown
+                  button#dropdownMenu1.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
+                     | English
+                     span.caret
+                  ul.dropdown-menu(aria-labelledby='dropdownMenu1')
+                     li
+                        a(href='#') Action
+                     li
+                        a(href='#') Another action
+               .dropdown
+                  button#dropdownMenu2.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
+                     i.fa.fa-jpy(aria-hidden='true')
+                     span.caret
+                  ul.dropdown-menu(aria-labelledby='dropdownMenu2')
+                     li
+                        a(href='#') Dola
+                     li
+                        a(href='#') Another action
+   .content
+      .container-fluid.bg-grey
+        .container
+          .col-md-9.col-sm-12
+            .main-content
+              a(href="reservation.html") Back to Reservation List
+              .card.mgb-md-30
+                .alert.alert-success(role='alert')
+                  h1
+                    strong Thank you! Booking completed.
+                    p Confirm email has been sent to 
+                    a(href="#") kaku@triple.jp
+              .card.mgb-md-30
+                h2 Private Chartered Paln/ Standard Course: 10-Hour Sightseeing from Tokyo. Pick-and -eat Fresh Cherry! The 5th Sation of Mt.Fuji, the World Heritage Site! Mt.Kachi Kachi Ropeway!
+                p.status Status:
+                  span.success Booked
+                .alert.alert-warning(role='alert')
+                  strong Warning!
+                  |  Cancellation fees will be chanrged after Mar 20,2017
+                p Reservation #:2323
+                p Tour code: K12842
+                p Rooms: 1 Room (shared by 3)
+                p Participant Information
+                .table-responsive
+                  table.table
+                    tr
+                      th Name
+                      th Age
+                      th Gender
+                      th Country
+                    tr
+                      td Kazuhisa Takahashi
+                      td 40
+                      td Male
+                      td Japan
+                    tr
+                      td Yokoso Hanako 
+                      td 37
+                      td Female
+                      td Japan
+                    tr
+                      td Yokoso Taro
+                      td 6
+                      td Male
+                      td Japan
+                p Tour Conductor: English
+                hr
+                dl.dl-horizontal
+                  dt.text-left Adult: 
+                    i.fa.fa-jpy(aria-hidden='true')
+                    | 40,000x2
+                  dd 
+                    i.fa.fa-jpy(aria-hidden='true')
+                    | 80,000
+                  dt.text-left
+                    | Children: 
+                    i.fa.fa-jpy(aria-hidden='true')
+                    | 20,000x1
+                  dd
+                    i.fa.fa-jpy(aria-hidden='true')
+                    | 20,000
+                  dt.text-left
+                    | Infants: 
+                    i.fa.fa-jpy(aria-hidden='true')
+                    | 0x1
+                  dd
+                    i.fa.fa-jpy(aria-hidden='true')
+                    | 0
+                  dt.text-left
+                    strong Sub Total: 
+                  dd
+                    i.fa.fa-jpy(aria-hidden='true')
+                    | 100,000
+                  dt.text-left
+                    strong Discount 5%: 
+                  dd
+                    | -
+                    i.fa.fa-jpy(aria-hidden='true')
+                    | 5,000
+                  dt.text-left
+                    strong Tax 8%: 
+                  dd 
+                    i.fa.fa-jpy(aria-hidden='true')
+                    | 7,600
+                  dt.text-left
+                    strong TOTAL
+                  dd
+                    i.fa.fa-jpy(aria-hidden='true')
+                    | 102,600
+                hr
+                p Date: Mon, Mar 27
+                p Meeting Time: 7:20 AM
+                p Additional Information
+                span Jiro is allergic to milk. Please do not add any milk products to his food.
+                p Emergency Contact: 090-1111-1111
+                p Hotel: Washington Hotel Shinjuku
+          .col-md-3.col-sm-12
+            .card.mgb-md-30
+              button.btn.btn-primary.btn-lg.btn-block(type='button') Print This Page
+            .card.mgb-md-30
+              h4.text-center Update information
+              ul
+                li
+                  a(href="#")(data-toggle='modal', data-target='#modalChangeDate-step-1') Change date
+                  #modalChangeDate-step-1.modal.fade(tabindex='-1', role='dialog', aria-labelledby='')
+                    .modal-dialog(role='document')
+                      .modal-content
+                        .modal-header
+                          button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            span(aria-hidden='true') &times;
+                          h4.modal-title Change Date
+                        .modal-body
+                          input#daterange.form-control(type='text', placeholder='Change Date')  
+                        .modal-footer
+                          button.btn.btn-default(type='button', data-dismiss='modal') Cancel
+                          a.btn.btn-primary(href='#modalChangeDate-step-2', data-toggle='modal', data-dismiss='modal') Check
+                  #modalChangeDate-step-2.modal.fade(tabindex='-1', role='dialog', aria-labelledby='')
+                    .modal-dialog(role='document')
+                      .modal-content
+                        .modal-header
+                          button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            span(aria-hidden='true') &times;
+                          h4.modal-title Change Date
+                        .modal-body
+                          p Tour date will be chged as follows:
+                            dl.dl-horizontal
+                              dt.text-left Before change:
+                              dd Mar 27, 2017
+                              dt.text-left After change:
+                              dd Mar 29, 2017
+                          p Price after update
+                            .box-booking-confirm-price
+                              dl.dl-horizontal
+                                dt.text-left Adult: 
+                                  i.fa.fa-jpy(aria-hidden='true')
+                                  | 40,000x2
+                                dd 
+                                  i.fa.fa-jpy(aria-hidden='true')
+                                  | 80,000
+                                dt.text-left
+                                  | Children: 
+                                  i.fa.fa-jpy(aria-hidden='true')
+                                  | 20,000x1
+                                dd
+                                  i.fa.fa-jpy(aria-hidden='true')
+                                  | 20,000
+                                dt.text-left
+                                  | Infants: 
+                                  i.fa.fa-jpy(aria-hidden='true')
+                                  | 0x1
+                                dd
+                                  i.fa.fa-jpy(aria-hidden='true')
+                                  | 0
+                                dt.text-left
+                                  strong Sub Total: 
+                                dd
+                                  i.fa.fa-jpy(aria-hidden='true')
+                                  | 100,000
+                                dt.text-left
+                                  strong Discount 5%: 
+                                dd
+                                  | -
+                                  i.fa.fa-jpy(aria-hidden='true')
+                                  | 5,000
+                                dt.text-left
+                                  strong Tax 8%: 
+                                dd 
+                                  i.fa.fa-jpy(aria-hidden='true')
+                                  | 7,600
+                                dt.text-left
+                                  strong TOTAL
+                                dd
+                                  i.fa.fa-jpy(aria-hidden='true')
+                                  | 102,600
+                              p.text-center By pressing ok button, i agree above date and price
+                        .modal-footer
+                          button.btn.btn-default(type='button', data-dismiss='modal') Cancel
+                          |  
+                          a.btn.btn-primary(href='change-date-3.html') Ok
+                li
+                  a(href="#")(data-toggle='modal', data-target='#modalChangeParticipants-step-1') Update Participants Info
+                  #modalChangeParticipants-step-1.modal.fade(tabindex='-1', role='dialog', aria-labelledby='')
+                    .modal-dialog.modal-lg(role='document')
+                      .modal-content
+                        .modal-header
+                          button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            span(aria-hidden='true') &times;
+                          h4.modal-title Update Participants
+                        .modal-body
+                          form.participants-form-outer#js-add-participant-wrap
+                            .participants-form-inner.modify
+                              .lg
+                                label First Name
+                                input.form-control(type='text', placeholder='Your First Name')
+                              .lg
+                                label Last Name
+                                input.form-control(type='text', placeholder='Your Last Name')
+                              .sm
+                                label(for='lastName') Gender
+                                select.form-control
+                                  option(value='', disabled='', selected='') Gender
+                                  option Male
+                                  option Famale
+                              .sm
+                                label.nowarp(for='lastName') Date of Birth
+                                input.js-dateOfBirth.form-control(type='text', placeholder='Your Birth Day')
+                              .md
+                                label.nowarp(for='lastName') Conuntry of Residence
+                                select.form-control
+                                  option(value='', disabled='', selected='') Country
+                                  option English
+                                  option Japan
+                              .xs
+                                button.js-btn-remove-participant.btn.delete-participant
+                                  i.fa.fa-trash-o(aria-hidden='true')
+                            .participants-form-inner.modify
+                              .lg
+                                label First Name
+                                input.form-control(type='text', placeholder='Your First Name')
+                              .lg
+                                label Last Name
+                                input.form-control(type='text', placeholder='Your Last Name')
+                              .sm
+                                label(for='lastName') Gender
+                                select.form-control
+                                  option(value='', disabled='', selected='') Gender
+                                  option Male
+                                  option Famale
+                              .sm
+                                label.nowarp(for='lastName') Date of Birth
+                                input.js-dateOfBirth.form-control(type='text', placeholder='Your Birth Day')
+                              .md
+                                label.nowarp(for='lastName') Conuntry of Residence
+                                select.form-control
+                                  option(value='', disabled='', selected='') Country
+                                  option English
+                                  option Japan
+                              .xs
+                                button.js-btn-remove-participant.btn.delete-participant
+                                  i.fa.fa-trash-o(aria-hidden='true')
+                            .participants-form-inner.modify
+                              .lg
+                                label First Name
+                                input.form-control(type='text', placeholder='Your First Name')
+                              .lg
+                                label Last Name
+                                input.form-control(type='text', placeholder='Your Last Name')
+                              .sm
+                                label(for='lastName') Gender
+                                select.form-control
+                                  option(value='', disabled='', selected='') Gender
+                                  option Male
+                                  option Famale
+                              .sm
+                                label.nowarp(for='lastName') Date of Birth
+                                input.js-dateOfBirth.form-control(type='text', placeholder='Your Birth Day')
+                              .md
+                                label.nowarp(for='lastName') Conuntry of Residence
+                                select.form-control
+                                  option(value='', disabled='', selected='') Country
+                                  option English
+                                  option Japan
+                              .xs
+                                button.js-btn-remove-participant.btn.delete-participant
+                                  i.fa.fa-trash-o(aria-hidden='true')
+                            button.js-add-participant.btn.btn-default + Add participant
+                            button.btn.btn-default(type='button', data-dismiss='modal') Cancel
+                            a.btn.btn-primary(href='#modalChangeParticipant-step-2', data-toggle='modal', data-dismiss='modal') Update
+                  #modalChangeParticipant-step-2.modal.fade(tabindex='-1', role='dialog', aria-labelledby='')
+                    .modal-dialog(role='document')
+                      .modal-content
+                        .modal-header
+                          button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            span(aria-hidden='true') &times;
+                          h4.modal-title Update Participants Information
+                        .modal-body
+                          p Participants information will be changed as follows:
+                            .table-responsive
+                              table.table
+                                tr
+                                  th Name
+                                  th Age
+                                  th Gender
+                                  th Country
+                                tr
+                                  td Uplpsp Jamalp
+                                  td 37 
+                                  td Female
+                                  td Japan
+                                tr
+                                  td Yokoso Tảo
+                                  td 37 
+                                  td Female
+                                  td Japan
+                          p Price after update
+                            .box-booking-confirm-price
+                              dl.dl-horizontal
+                                dt.text-left Adult: 
+                                  i.fa.fa-jpy(aria-hidden='true')
+                                  | 40,000x1
+                                dd 
+                                  i.fa.fa-jpy(aria-hidden='true')
+                                  | 80,000
+                                dt.text-left
+                                  | Children: 
+                                  i.fa.fa-jpy(aria-hidden='true')
+                                  | 20,000x1
+                                dd
+                                  i.fa.fa-jpy(aria-hidden='true')
+                                  | 20,000
+                                dt.text-left
+                                  | Infants: 
+                                  i.fa.fa-jpy(aria-hidden='true')
+                                  | 0x1
+                                dd
+                                  i.fa.fa-jpy(aria-hidden='true')
+                                  | 0
+                                dt.text-left
+                                  strong Sub Total: 
+                                dd
+                                  i.fa.fa-jpy(aria-hidden='true')
+                                  | 100,000
+                                dt.text-left
+                                  strong Discount 5%: 
+                                dd
+                                  | -
+                                  i.fa.fa-jpy(aria-hidden='true')
+                                  | 5,000
+                                dt.text-left
+                                  strong Tax 8%: 
+                                dd 
+                                  i.fa.fa-jpy(aria-hidden='true')
+                                  | 7,600
+                                dt.text-left
+                                  strong TOTAL
+                                dd
+                                  i.fa.fa-jpy(aria-hidden='true')
+                                  | 102,600
+                                dt.text-left
+                                  strong Cancellation Fee 20%:
+                                dd
+                                  i.fa.fa-jpy(aria-hidden='true')
+                                  | 8,000
+                                dt.text-left
+                                  strong Grand Total
+                                dd
+                                  i.fa.fa-jpy(aria-hidden='true')
+                                  | 75,600
+                              p.text-center By pressing ok button, i agree above date and price
+                        .modal-footer
+                          button.btn.btn-default(type='button', data-dismiss='modal') Cancel
+                          |  
+                          button.btn.btn-primary(type='button', data-dismiss='modal') Ok
+                li
+                  a(href="#") Change support guide
+                li
+                  a(href="#")(data-toggle='modal', data-target='#modalCancel-step-1') Cancel
+                  #modalCancel-step-1.modal.fade(tabindex='-1', role='dialog', aria-labelledby='')
+                    .modal-dialog.modal-lg(role='document')
+                      .modal-content
+                        .modal-header
+                          button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            span(aria-hidden='true') &times;
+                          h4.modal-title Cancel Reservation
+                        .modal-body
+                          p Cancellation fees:
+                            dl.dl-horizontal
+                              dt.text-left Adults: 
+                                i.fa.fa-jpy(aria-hidden='true')
+                                | 40,000 x 2 x 20%
+                              dd.text-right 
+                                i.fa.fa-jpy(aria-hidden='true')
+                                | 16,000
+                              dt.text-left Childrens: 
+                                i.fa.fa-jpy(aria-hidden='true')
+                                | 20,000 x 2 x 20%
+                              dd.text-right 
+                                i.fa.fa-jpy(aria-hidden='true')
+                                | 4,000
+                              dt.text-left Cancellation Fee:
+                              dd.text-right 
+                                i.fa.fa-jpy(aria-hidden='true')
+                                | 20,000
+                              dt.text-left Previous card charge:
+                              dd.text-right 
+                                i.fa.fa-jpy(aria-hidden='true')
+                                | 102,600
+                              dt.text-left Amount of Refund
+                              dd.text-right 
+                                i.fa.fa-jpy(aria-hidden='true')
+                                | 80,600
+                          p Please tell us the reason for cancellation:
+                            form
+                              .checkbox
+                                label
+                                  input(type='checkbox', value='')
+                                  |  I found a better tour on YOKOSO Website.
+                              .checkbox
+                                label
+                                  input(type='checkbox', value='')
+                                  |  I found a btter tour on other website.
+                              .checkbox
+                                label
+                                  input(type='checkbox', value='')
+                                  |  I cancelled my trip.
+                              .checkbox
+                                label
+                                  input(type='checkbox', value='')
+                                  |  Other.
+                        .modal-footer
+                          button.btn.btn-default(type='button', data-dismiss='modal') No, I don't want to cancel
+                          a.btn.btn-primary(href="cancel2.html") Yes, please cancel
+                li
+                  a(href="#") View Cancel Policy
+            .card.mgb-md-30
+              button.btn.btn-primary.btn-lg.btn-block(type='button') Send Invoice   
+   footer.footer
+      .container.sm
+         dl.dl-horizontal
+          dt About Us
+          dd
+            | dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          dt Service center 
+          dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+   .copyright.text-center
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

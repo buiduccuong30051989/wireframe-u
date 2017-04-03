@@ -1,0 +1,14 @@
+.step-book{
+   display: inline-block;
+   width:100%;
+   .step{
+      width:50%;
+      text-align: center;
+      float:left;
+      line-height: 60px;
+      background: #eee;
+      &.current{
+         background: #f90;
+      }
+   }
+}
