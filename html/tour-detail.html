@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>wireframe-u</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="wireframe" />
+    <meta name="keywords" content="wireframe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/main.js" charset="utf-8"></script>
+    <script src="js/function.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container header-inner">
+        <div class="logo">
+          <img src="http://placehold.it/150x50">
+        </div>
+        <div class="control">
+          <div class="group-btn">
+            <button class="btn btn-default" type="button" data-toggle="modal" data-target="#siginModal">Login</button>
+            <div class="modal fade" id="siginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input class="form-control" id="exampleInputEmail1" type="email" placeholder="Email">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input class="form-control" id="exampleInputPassword1" type="password" placeholder="Password">
+                      </div>
+                      <button class="btn btn-primary btn-block" type="submit">Sign In</button>
+                      <div class="text-center">Or Sign-in by SNS Account</div>
+                    </form>
+                    <div class="text-center">
+                      <button class="btn btn-default" type="button" data-dismiss="modal">Sign-in with Facebook</button>
+                      <button class="btn btn-primary" type="button">Sign-in with Weibo</button>
+                    </div>
+                  </div>
+                  <div class="modal-footer text-center">
+                    <p>if you do not have an account,</p>
+                    <strong>
+                      <a href="#sigupModal" data-toggle="modal" data-dismiss="modal">Create an account</a>
+                    </strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#sigupModal">Register</button>
+            <div class="modal fade" id="sigupModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input class="form-control" id="exampleInputEmail1" type="email" placeholder="Email">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input class="form-control" id="exampleInputPassword1" type="password" placeholder="Password">
+                      </div>
+                      <button class="btn btn-primary btn-block" type="submit">Sign Up</button>
+                      <div class="text-center">OR</div>
+                    </form>
+                    <div class="text-center">
+                      <button class="btn btn-default" type="button" data-dismiss="modal">Sign-in with Facebook</button>
+                      <button class="btn btn-primary" type="button">Sign-in with Weibo</button>
+                    </div>
+                  </div>
+                  <div class="modal-footer text-center">
+                    <strong>By Creating an account and signing up, i accept the
+                      <a href="#">Term of services </a>and
+                      <a href="#">Privacy Policy</a>
+                    </strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="group-dropdown">
+            <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" id="dropdownMenu1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">English
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li>
+                  <a href="#">Action</a>
+                </li>
+                <li>
+                  <a href="#">Another action</a>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" id="dropdownMenu2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <i class="fa fa-jpy" aria-hidden="true"></i>
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li>
+                  <a href="#">Dola</a>
+                </li>
+                <li>
+                  <a href="#">Another action</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#">Link</a>
+            </li>
+            <li>
+              <a href="#">Link</a>
+            </li>
+            <li>
+              <a href="#">Link</a>
+            </li>
+            <li>
+              <a href="#">Link</a>
+            </li>
+            <li>
+              <a href="#">Link</a>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">Action</a>
+                </li>
+                <li>
+                  <a href="#">Another action</a>
+                </li>
+                <li>
+                  <a href="#">Something else here</a>
+                </li>
+                <li class="divider" role="separator"></li>
+                <li>
+                  <a href="#">Separated link</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="slider">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="http://placehold.it/600x200/09f/fff">
+        </div>
+        <div class="item">
+          <img src="http://placehold.it/600x200/000/fff">
+        </div>
+        <div class="item">
+          <img src="http://placehold.it/600x200/05f/fff">
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="container-fluid bg-grey">
+        <div class="container">
+          <div class="col-md-9 col-sm-12">
+            <div class="main-content">
+              <div class="card mgb-md-30">
+                <h2>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</h2>
+                <ul>
+                  <li>day 1</li>
+                  <li>Departure From: Tokyo</li>
+                  <li>Tour Code: K1049</li>
+                  <li>per adult JPY 104,300</li>
+                </ul>
+              </div>
+              <div class="card mgb-md-30">
+                <h3>Hightlights</h3>
+                <p>
+                  dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                  dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+              <div class="card mgb-md-30">
+                <h3>Ltinaiary</h3>
+                <p>
+                  <strong>day 1</strong>Breakfast: 0/ Lunch: 0/ Dinner: 0</p>
+                <p>
+                  dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                  dolor in reprehenderit in voluptate velit esse
+                </p>
+                <p>
+                  <strong>day 1</strong>Breakfast: 0/ Lunch: 0/ Dinner: 0</p>
+                <p>
+                  dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                  dolor in reprehenderit in voluptate velit esse
+                </p>
+              </div>
+              <div class="card mgb-md-30">
+                <h3>Details</h3>
+                <dl class="dl-horizontal">
+                  <dt>Departure Place</dt>
+                  <dd>Tokyo</dd>
+                  <dt>Destination</dt>
+                  <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </dd>
+                  <dt>Language</dt>
+                  <dd>Tokyo</dd>
+                  <dt>A range of Language Support</dt>
+                  <dd>Tokyo</dd>
+                  <dt>Minimum number of participants for operation</dt>
+                  <dd>Tokyo</dd>
+                  <dt>Minimum number of participants for booking</dt>
+                  <dd>Tokyo</dd>
+                  <dt>Items included</dt>
+                  <dd>Tokyo</dd>
+                  <dt>Items included in "infant price"</dt>
+                  <dd>Tokyo</dd>
+                  <dt>Notes</dt>
+                  <dd>Tokyo</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <div class="card">
+              <div class="heading-price">
+                <h3>JPY 104,333</h3>
+                <span>(approx: USD 1,040)</span>
+              </div>
+              <input class="form-control" id="daterange" type="text" placeholder="When">
+              <p>Mon, Mar 27</p>
+              <p>Total People
+                <span class="js-update-people">4</span>
+              </p>
+              <div class="dropdown">
+                <p class="js-open-modify-room-people" data-toggle="dropdown" aria-labelledby="dropdownMenu1">
+                  <span class="js-update-room">1 </span> Room (shared by 3)</p>
+                <div class="dropdown-menu js-dropdown-modify-room" aria-labelledby="dropdownMenu1">
+                  <P>Room shared
+                    <span class="js-update-room">1 </span>
+                    <button class="js-decrement-room">-</button>
+                    <button class="js-increment-room">+</button>
+                  </P>
+                  <p>People
+                    <span class="js-update-people">4</span>
+                    <button class="js-decrement-people">-</button>
+                    <button class="js-increment-people">+</button>
+                  </p>
+                </div>
+              </div>
+              <p>English</p>
+              <a class="btn btn-primary btn-lg btn-block" href="#">Continue Booking</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container sm">
+        <dl class="dl-horizontal">
+          <dt>About Us</dt>
+          <dd>
+            dd Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </dd>
+          <dt>Service center </dt>
+          <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </dd>
+        </dl>
+      </div>
+    </footer>
+    <div class="copyright text-center">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+    </div>
+  </body>
+</html>
